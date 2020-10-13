@@ -1,0 +1,1 @@
+let mynum:number = 1;

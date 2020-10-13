@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "kr",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc -p ."
+  },
   "dependencies": {
     "typescript": "^4.0.3"
   }
