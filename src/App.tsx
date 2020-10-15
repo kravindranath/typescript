@@ -1,15 +1,17 @@
 import React from 'react';
+import TabComponent from './components/TabComponent'
+import Person from './components/Person';
+import personData from './components/personData';
 
-export interface defaultProps {
-    heading: string,
-    name?: string
+interface defaultProps {
+    heading?: string
 }
 
-const App:React.FC<defaultProps> = ({ heading, name }) => {
+const App:React.FC<defaultProps> = ({ heading }) => {
     return (
         <div>
-            Hello world from the App!
-            <h1>{heading}: {name}</h1>
+            <TabComponent name="Tab1" link="http://localhost:8080/" />
+            <Person name={personData.name} dob={personData.dob} />
         </div>
     );
 }
